@@ -1,0 +1,12 @@
+services:
+  go_tst:
+    build: ./golang
+    networks:
+      - go_tst
+    volumes:
+      - ../:/var/www/
+    working_dir: /var/www/project
+    command: "tail -F anything"
+
+networks:
+  go_tst:
