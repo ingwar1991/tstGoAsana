@@ -1,6 +1,3 @@
-FROM golang:latest
+FROM golang:1.24.4
 RUN apt-get update && \
-    apt-get install -y vim && \
-    cd /usr/share && mkdir nvim && cd nvim && \
-    curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage && chmod u+x nvim.appimage && \
-    ln -s nvim.appimage /usr/local/bin/nvim
+    apt-get install -y vim 

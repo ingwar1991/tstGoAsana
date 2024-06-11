@@ -1,2 +1,3 @@
 asanaPAT: 
 asanaGetRateLimit: 50
+pathForJsonFiles: jsonFiles/
